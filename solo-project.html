@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medium Solo Project Page</title>
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <style> 
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=PT+Serif&display=swap'); 
@@ -14,14 +14,14 @@
 </head>
 <body>
     <div class="navbar">
-        <span>  <img class="logo" src="/svg/logo.svg" /> </span>
+        <span> <a href="https://medium.com/"> <img class="logo" src="/svg/logo.svg" /></a> </span>
         <div class="nav">
-         <span class="navmenu">Our story</span>
-          <span class="navmenu">Membership </span>
-          <span class="navmenu">Write </span>
-          <span class="navmenu">Sign In </span>
+         <span class="navmenu"><a href="https://medium.com/about?autoplay=1">Our story</a></span>
+          <span class="navmenu"><a href="https://medium.com/membership">Membership</a></span>
+          <span class="navmenu"><a href="https://medium.com/creators">Write</a></span>
+          <span class="navmenu"><a href="#">Sign In</a></span>
       </div>
-        <div> <button class="btn"> Get Started </button></div>
+        <div> <button onclick="alertBtn()" class="btn"> Get Started </button></div>
     </div>
     
 
@@ -29,7 +29,7 @@
         <div class="main-content">
         <h1 class="header">Stay curious.</h1>
         <p class="main-text"> Discover stories, thinking, and expertise from writers on any topic.</p>
-        <div> <button class="btn2"> Start reading </button></div>
+        <div> <button onclick="alertBtn()" class="btn2"> Start reading </button></div>
       </div>
         <div class="main-animation">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 585 462" width="585" height="462"
@@ -5272,7 +5272,6 @@
         </div>
       </div>
       <hr>
-
       <div class="trending-container">
         <div class="trending-logo">
           <img src="/svg/trending.svg" /> 
@@ -5280,25 +5279,82 @@
         </div>
         <div class="card-container">
           <div class="card-box">
-            <h3>01</h3>
+            <h3> 01 </h3>
             <div class="card">
-              <div class="name">Sander Mak in Picnic Engineering</div> 
-                <div class="title"> <b>Why Picnic picked Java</b></div>
+              <div class="name"><a href="https://blog.picnic.nl/"><img class="trending-img" src="/imgs/image01.jpeg"></a> <a href="https://medium.com/@sander.mak">Sander Mak</a>  in <a href="https://blog.picnic.nl/" >Picnic Engineering</div></a><br>
+                <div class="title"> <a href="https://blog.picnic.nl/why-picnic-picked-java-e53fafe0df1b"> Why Picnic picked Java</div></a><br>
                 <div class="date">Dec 20 · 9 min read</div>
             </div>
         </div>
         <div class="card-box">
-          <h3>02</h3>
+          <h3> 02 </h3>
           <div class="card">
-            <div class="name">Ted Bauer</div> 
-              <div class="title"> <b>University of Idaho Murders: Now It Looks Like John “Jack” Showalter, Right?</b></div>
-              <div class="date">Dec 6 · 1 min read <img src="/svg/star.svg"></div>
+            <div class="name"> <a href="https://medium.com/@worldhistory"> <img class="trending-img" src="/imgs/image02.png"> George Dillard </div></a><br>
+              <div class="title"> <a href="https://worldhistory.medium.com/tech-journalism-doesnt-know-what-to-do-with-mastodon-df1309f088a0"> Tech Journalism Doesn’t Know What to Do With Mastodon </a> </div><br>
+              <div class="date">Dec 23 · 5 min read <img src="/svg/star.svg"></div>
           </div>
       </div>
+      <div class="card-box">
+        <h3> 03 </h3>
+        <div class="card">
+          <div class="name"> <a href="https://medium.com/@mitrakos"> <img class="trending-img" src="/imgs/image03.jpeg"> Michael Mitrakos</a> in <a href="https://initjs.org/"> InitJS </div> </a> <br>
+            <div class="title"> <a href="https://initjs.org/react-js-best-practices-fbd180e665b2"> React JS Best Practices</div></a><br>
+            <div class="date">Dec 26 · 3 min read </div> 
+        </div>
+    </div>
+    <div class="card-box">
+        <h3> 04 </h3>
+        <div class="card">
+          <div class="name"> <a href="https://towardsdatascience.com/"> <img class="trending-img" src="/imgs/image04.png"> </a><a href="https://medium.com/@natassha6789">Natassha Selvaraj </a> in <a href="https://towardsdatascience.com/"> TDS</div></a> <br>
+            <div class="title"> <a href="https://towardsdatascience.com/how-to-make-money-while-learning-data-science-in-2023-8f1e898d2db5">How to Make Money While Learning Data Science in 2023 </div></a><br>
+            <div class="date">Dec 28 · 7 min read <img src="/svg/star.svg"> </div>
+        </div>
+    </div>
+    <div class="card-box">
+        <h3> 05 </h3>
+        <div class="card">
+          <div class="name"> <a href="https://medium.com/@jonmackenzie"> <img class="trending-img" src="/imgs/image05.jpeg"> Jon Mackenzie </div></a> <br>
+            <div class="title"> <a href="https://medium.com/@jonmackenzie/a-new-materialism-rethinking-the-metaphysics-of-football-tactics-9ddc23bb129b">A New Materialism: Rethinking the Metaphysics of Football Tactics </div></a><br>
+            <div class="date">Dec 27 · 8 min read  </div>
+        </div>
+    </div>
+    <div class="card-box">
+        <h3> 06 </h3>
+        <div class="card">
+          <div class="name"> <a href="https://medium.com/@kozyrkov"> <img class="trending-img" src="/imgs/image06.png"> Cassie Kozyrkov </div></a> <br>
+            <div class="title"> <a href="https://kozyrkov.medium.com/2022-a-productivity-revolution-f34f32a27e5b">2022: A productivity revolution</div></a><br>
+            <div class="date">Dec 24 · 8 min read  <img src="/svg/star.svg"> </div>
+        </div>
+    </div>
       </div>
         </div>
-
+      </div>
+      <hr>
+      <div class="news-section">
+        <div class="news">
+            <div class="news-items>">
+                <div class="name"> <a href="https://medium.com/the-spike"><img class="news-img" src="/imgs/image07.jpeg"></a> <a href="https://medium.com/@drmdhumphries"> Mark Humphries </a> in <a href="https://medium.com/the-spike"> The Spike </div></a>
+                <div class="title"> <a href="https://medium.com/the-spike/2022-a-review-of-the-year-in-neuroscience-ae4e0de082e7"> <h4> 2022: A Review of the Year in Neuroscience</h4> </a> 
+                    <h5> A paean to being boring </h5> </div>
+                    <div class="date">Dec 28 · 9 min read · <a href="https://medium.com/tag/neuroscience"><button class="btn3"> Neuroscience </button></a> <a href="#"><img onclick="showAlert()" class="bookmark" src="svg/bookmark.svg"></a> 
+                        </div>
+                        <img class="preview-img"src="/imgs/image08.jpeg"> 
+            </div>
+        </div>
 
       </div>
-    
+      <script>
+
+        function showAlert() {
+          var myText = "Create an account to bookmark this story.";
+          alert (myText);
+        }
+
+        function alertBtn() {
+            var text = "Join Medium. Already have an account? Sign in"
+            alert (text);
+        }
+        </script>
 </body>
+
+</html>
