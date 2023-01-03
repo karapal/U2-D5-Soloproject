@@ -136,18 +136,25 @@ h5 {
     padding-bottom: 8px;
     color: var(--color-lighter);
 }
+.news {
+}
+.news-items {
+    
+}
 .title {
     margin-bottom: 8px;
 }
 .name {
     font-size: small;
-   
-    
-    
 }
 .date{
     font-size: small;
 }
 .preview-img{
     width: 200px;
+    overflow: hidden;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
